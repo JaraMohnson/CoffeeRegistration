@@ -1,0 +1,45 @@
+﻿@model User
+
+@*
+	For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<body style="background-color: beige">
+
+	<div style="border: 5px solid white; width: 80%; margin: auto">
+
+		<h1 style="color: #635332; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;"> Welcome! Check your email for your first free drink. </h1>
+
+
+		<h2 style="color: #635332; margin: auto; text-align: center;"> Account successfully created for @Model.FirstName</h2>
+
+	</div>
+
+	<div style="border: 5px solid white; width: 60%; margin: auto; text-align: center">
+		<p>
+			First Name: @Model.FirstName
+		</p>
+		<p>
+			Last Name: @Model.LastName
+		</p>
+		<p>
+			Email Address: @Model.Email
+		</p>
+		<p>
+			Password: @Model.Password
+		</p>
+
+
+	</div>
+
+	<div style="margin:auto; text-align: center;">
+		<img 
+	style = "height: 250px;  "
+	src="https://thumbs.dreamstime.com/b/coffee-mug-kawaii-face-design-icon-cute-cartoon-character-theme-isolated-vector-illustration-77297169.jpg" />
+
+
+	</div>
+	
+
+</body>

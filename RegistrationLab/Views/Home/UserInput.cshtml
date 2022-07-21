@@ -1,0 +1,55 @@
+﻿@*
+	For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+  
+<body style="
+background-image: url(https://media.istockphoto.com/vectors/kawaii-style-coffee-drinks-vector-illustration-set-vector-id1209902844?k=20&m=1209902844&s=612x612&w=0&h=dKhoOfeAzTMkUuZvITpcjxZL0YIUssNPdXaBVaBCQgE=)">
+
+<p style="color: #573e03; border: 2px solid beige; background-color: white; font-weight: bold; width: 40%; margin-left:auto;margin-right:auto;text-align:center"> 
+	Please provide your information :)  
+</p>
+
+
+<div style = "margin: auto; text-align: center">  
+
+	<form method="post" asp-action="UserResult">
+	<!-- name of input will be its variable name so you have to match how the variables are named -->
+
+	<p style="color: #573e03; border: 2px solid beige; background-color: white; display: inline-block; font-weight: bold;">
+		First Name
+	</p>
+		
+	<input type="text" name="FirstName" />
+	<br /> <br />
+
+	<p style="color: #573e03; border: 2px solid beige; background-color: white; display: inline-block; font-weight: bold;">
+		Last Name
+	
+	</p>
+	
+	<input type="text" name="LastName" /> <br /><br />
+
+	<p style="color: #573e03; border: 2px solid beige; background-color: white; display: inline-block; font-weight: bold;">
+		Email
+		
+	</p>
+
+	<input type="text" name="Email" />
+	 <br /><br />
+
+	<p style="color: #573e03; border: 2px solid beige; background-color: white; display: inline-block; font-weight: bold;">
+		Password
+		
+	</p>
+	<!-- use "password" when you need to here........   -->
+	<input type="password" name="Password" />
+	<br />
+	<!-- on click, will sent values to associated action -->
+	<input type="submit" />
+</form>
+
+</div>
+<!-- method="post" tells it that it will send values out. ASP-ACTION tells it in which action in controller it will go to -->
+</body>
